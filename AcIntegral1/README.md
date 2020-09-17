@@ -11,20 +11,21 @@ A01706190
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
-______________________________________
-|                                                                   |
+
+|                                                              |
 |                                  casa1                       |
-|       casa2                                                   |
-|                                                                   |
+|       casa2                                                  |
+|                                                              |
 |       tú                                      casa3          |
-| _____________________________________|
+|                                                              |
 
 Entonces, el programa está encargado de leer dicho archivo, almacenar cada ubicacion como un objeto; dentro de un vector, ordenarlo; de ubicación más cercana a más lejana, permitir la búsqueda e imprimirlo en otro archivo de texto.
 ## File.h
 Lee un archivo txt y escribe un nuevo archivo la lista de ubicaciones ordenadas. El formato debe ser:
-> "Nombre" "X" "Y"
+- "Nombre" "X" "Y"
+
 El formato de salida es:
-> "Nombre" "(X,Y)" "Distancia del punto dado"
+- "Nombre" "(X,Y)" "Distancia del punto dado"
 
 ## Location.h
 Objeto que almacena el nombre de la ubicación y las coordenadas de dicho lugar. Despés calcula la disrtancia con respecto a una ubicación dada.

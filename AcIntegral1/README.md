@@ -1,23 +1,23 @@
 # Actividad Integral 1
 Israel Iván Arroyo Parada
 A01706190
-## Table of contents
+## Tabla de contenidos
 * [Información general](#información-general)
-* [File.h](#file.h)
-* [Location.h](#location.h)
-* [Map.h](#map.h)
+* [File.h](#File.h)
+* [Location.h](#Location.h)
+* [Map.h](#Map.h)
 
 ## Información general
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
 
-|..................................................................................|
-|................................. casa1...........................................|
-|.......casa2......................................................................|
-|..................................................................................|
-|.......tú......................................casa3..............................|
-|..................................................................................|
+|..................................................................................|.
+|................................. casa1...........................................|.
+|.......casa2......................................................................|.
+|..................................................................................|.
+|.......tú......................................casa3..............................|.
+|..................................................................................|.
 
 Entonces, el programa está encargado de leer dicho archivo, almacenar cada ubicacion como un objeto; dentro de un vector, ordenarlo; de ubicación más cercana a más lejana, permitir la búsqueda e imprimirlo en otro archivo de texto.
 ## File.h

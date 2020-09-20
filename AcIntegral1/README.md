@@ -43,8 +43,9 @@ Ordena la lista de "Locations" del objeto Map utilizando el algoritmo "Merge Sor
 
 El "sort" tiene un tiempo de **O(n*logn)**. "mergeSplit" corre en un tiempo O(n), pues se divide todo hasta llegar a arreglos de un solo elemento (si asumimos que se divide todo el arreglo antes de todo). La operación "mergeArray" debe comparar los elementos de dos arreglos y decidir cuál es menor. Esto está hecho en tiempo O(n), pero la operacion se hace con menos frecuencia en cada llamada iterativa. Este comportamiento es de O(logn) se divide el trabajo a la mitad mientras se mueve hacia arriba en los niveles del árbol recursivo. Por lo tanto, el tiempo es O(n*logn), el tiempo de "split" se descarta.
 ### find
-Recibe dos ints para indicar rango de búsqueda para buscar y una referencia a un objeto Map. En el objeto Map se concatenan las ubicaciones encontradas. Se utiliza la búsqueda secuencial para enontrar facilmente ubicaciones contiguas.
-La búsqueda secuencial corre en **O(n)**. Aunque se parta del supesto de un arreglo ordenado, en el peor de los casos se recorren todos los elementos hasta encontrar uno en particular. Consta de un solo "for loop"que recorre el arreglo. Por lo tanto, es O(n).
+Recibe dos ints para indicar rango de búsqueda para buscar y una referencia a un objeto Map. En el objeto Map se concatenan las ubicaciones encontradas. Se utiliza la búsqueda secuencial para enontrar facilmente ubicaciones contiguas. Pero, como se debe realizar la búsqueda para cada valor del rango dado, se convierte en una función de **O(n^2**).
+La búsqueda secuencial corre en O(n). Aunque se parta del supesto de un arreglo ordenado, en el peor de los casos se recorren todos los elementos hasta encontrar uno en particular. Consta de un solo "for loop"que recorre el arreglo. Por lo tanto, es O(n).
+Si agregamos el otro recorrido, podemos concluir que la función find corre en **O(n^2).**
 
 ## Casos de prueba
 ### Caso 1

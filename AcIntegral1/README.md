@@ -21,6 +21,9 @@ Como se muestra en el dibujo:
 |..................................................................................|.  
 
 Entonces, el programa está encargado de leer dicho archivo, almacenar cada ubicacion como un objeto; dentro de un vector, ordenarlo; de ubicación más cercana a más lejana, permitir la búsqueda e imprimirlo en otro archivo de texto.
+
+La comlejidad del programa, en general, es de O(n^2) si tomamos en cuenta los procesos que lleva a cabo. El ordenamiento y la búsqueda corren en tiempos de O(n*logn) y O(n^2), respectivamente. A grandes rasgos, el programa corre en un tiempo de O(n^2).
+
 ## File.h
 Lee un archivo txt y escribe un nuevo archivo la lista de ubicaciones ordenadas. El formato debe ser:
 - "Nombre" "X" "Y"

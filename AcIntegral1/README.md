@@ -97,7 +97,7 @@ Coordenadas iniciales (1,1)
 1. Rango de 0m a 0m
 2. Rango de 0m a 10m
 3. Rango de 10m a 100m
-4. Rango de -10m a -10m (a la redonda, por lo tanto se toma como positivos)
+4. Rango de -10m a -10m (a la redonda, por lo tanto, se toma como positivos)
 
 ##### Output (busqueda): 
 1. nan (0,0) distancia: 0m 

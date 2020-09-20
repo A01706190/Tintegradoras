@@ -44,6 +44,7 @@ int main(int argc, const char * argv[])
     
     while(opcion!=6)
     {
+        Map busca;
         menu(opcion);
         switch (opcion) {
             case 1:

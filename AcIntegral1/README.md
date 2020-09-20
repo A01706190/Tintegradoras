@@ -44,3 +44,62 @@ El "sort" tiene un tiempo de **O(n*logn)**. "mergeSplit" corre en un tiempo O(n)
 ### find
 Recibe dos ints para indicar rango de búsqueda para buscar y una referencia a un objeto Map. En el objeto Map se concatenan las ubicaciones encontradas. Se utiliza la búsqueda secuencial para enontrar facilmente ubicaciones contiguas.
 La búsqueda secuencial corre en **O(n)**. Aunque se parta del supesto de un arreglo ordenado, en el peor de los casos se recorren todos los elementos hasta encontrar uno en particular. Consta de un solo "for loop"que recorre el arreglo. Por lo tanto, es O(n).
+
+## Casos de prueba
+### Caso 1
+#### Input: 
+Coordenadas iniciales (1,1)
+##### Output(ordenamiento): 
+tiendita_de_la_esquina (1,0) distancia: 1m 
+restaurante (2,3) distancia: 2m 
+casa_de_carnicero (1,5) distancia: 4m 
+casa_blanca (2,10) distancia: 9m 
+casa_varde (1,10) distancia: 9m 
+puente (6,16) distancia: 15m 
+dulceria (20,20) distancia: 26m 
+casa_azul (1,30) distancia: 29m 
+panaderia (70,10) distancia: 69m 
+casa_naranja (10,100) distancia: 99m 
+
+### Caso 2
+#### Input: 
+Coordenadas iniciales (-10,-50)
+##### Output(ordenamiento): 
+restaurante (2,3) distancia: 54m 
+casa_de_carnicero (1,5) distancia: 56m 
+casa_blanca (2,10) distancia: 61m 
+casa_varde (1,10) distancia: 61m 
+puente (6,16) distancia: 67m 
+dulceria (20,20) distancia: 76m 
+casa_azul (1,30) distancia: 80m 
+panaderia (70,10) distancia: 100m 
+casa_naranja (10,100) distancia: 151m 
+
+### Caso 3
+#### Input:
+Coordenadas iniciales (100, 200)
+##### Output(ordenamiento): 
+casa_naranja (10,100) distancia: 134m 
+panaderia (70,10) distancia: 192m 
+dulceria (20,20) distancia: 196m 
+casa_azul (1,30) distancia: 196m 
+puente (6,16) distancia: 206m 
+casa_blanca (2,10) distancia: 213m 
+casa_varde (1,10) distancia: 214m 
+casa_de_carnicero (1,5) distancia: 218m 
+restaurante (2,3) distancia: 220m 
+tiendita_de_la_esquina (1,0) distancia: 223m 
+
+### Caso 4
+#### Input
+Coordenadas iniciales (1,1)
+1. Rango de 0m a 0m
+2. Rango de 0m a 10m
+3. Rango de 10m a 100m
+4. Rango de -10m a -10m (a la redonda, por lo tanto se toma como positivos)
+
+##### Output (busqueda): 
+1. nan (0,0) distancia: 0m 
+2. tiendita_de_la_esquina (1,0) distancia: 1m , restaurante (2,3) distancia: 2m , casa_de_carnicero (1,5) distancia: 4m ,casa_varde (1,10) distancia: 9m , casa_blanca, (2,10) distancia: 9m 
+3. puente (6,16) distancia: 15m, dulceria (20,20) distancia: 26m , casa_azul (1,30) distancia: 29m , panaderia (70,10) distancia: 69m , casa_naranja (10,100) distancia: 99m 
+4. nan (0,0) distancia: 0m 

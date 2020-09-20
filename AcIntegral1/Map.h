@@ -12,6 +12,7 @@
 #include <vector>
 #include <fstream>
 #include <math.h>
+#include <cmath>
 #include "Location.h"
 
 using namespace std;
@@ -53,8 +54,7 @@ Map::Map(vector<string>& v, int arr[])
 }
 void Map::setLocations(vector<Location> vec)
 {
-    locations[0] = vec[0];// ocupar espacio vacio
-    for(int i = 1; i<vec.size(); i++)
+    for(int i = 0; i<vec.size(); i++)
     {
         locations.push_back(vec[i]);
     }
@@ -63,9 +63,16 @@ void Map::setLocations(vector<Location> vec)
 string Map::toString()
 {
     stringstream aux;
-    for (int i = 0; i < locations.size();i++)
+    if(locations.size()>1)
     {
-        aux << locations[i].toString()<<"\n";
+        for (int i = 1; i < locations.size();i++)
+        {
+            aux << locations[i].toString()<<"\n";
+        }
+    }
+    else
+    {
+        aux << locations[0].toString()<<"\n";
     }
     return aux.str();
 }
@@ -151,7 +158,7 @@ void Map::find(int first, int last, Map& res)
 {
     vector<Location> result;
     Location fail;
-    for (int val = first; val<=last; val++)
+    for (int val = abs(first); val<=abs(last); val++)
     {
         int size = (int)locations.size();
         bool is_in = true;

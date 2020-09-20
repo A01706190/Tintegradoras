@@ -6,6 +6,7 @@ A01706190
 * [File.h](#File.h)
 * [Location.h](#Location.h)
 * [Map.h](#Map.h)
+* [Casos de prueba](#casos_de_prueba)
 
 ## Información general
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.

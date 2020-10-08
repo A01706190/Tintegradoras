@@ -4,6 +4,7 @@ Tareas integradoras de TC1031.2 2020
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
+
 |..................................................................................|.  
 |.................................casa1...........................................|.  
 |......casa2......................................................................|.  

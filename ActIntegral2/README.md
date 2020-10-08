@@ -10,13 +10,14 @@ A01706190
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
-______________________________________
-|                                                                   |  
-|                                  casa1                       |  
-|       casa2                                                   |  
-|                                                                   |  
-|       tú                                      casa3          |  
-| _____________________________________|  
+
+|..................................................................................|.  
+|.................................casa1...........................................|.  
+|......casa2......................................................................|.  
+|..................................................................................|.  
+|.......tú....................................casa3..............................|.  
+|..................................................................................|.  
+
 
 Además de ordenar un vector, se implementó una estructura de listas ligadas para simular el recorrido de lugares. Entonces se agrega una ubicacion por visitar a la lista con cada enqueue. Por lo tanto, atiende en el orden de entrada. Así, al terminar de visitar un lugar de la lista, se elimina con un dequeue.
 En este README se discute más a fondo las nuevas funciones implementadas con respecto a listas ligadas en Queue.

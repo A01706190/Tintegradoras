@@ -5,14 +5,14 @@ Este programa presenta un tablero con varias ubicaciones, entre ellas, la del us
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
 ______________________________________
-|                                                                   |  
-|                                  casa1                       |  
-|       casa2                                                   |  
-|                                                                   |  
-|       tú                                      casa3          |  
+|                                      |  
+|                                 casa1|  
+|       casa2                          |    
+|                                      |    
+|       tú              casa3          |  
 | _____________________________________|  
 
-En la carpetas se muestran las versiones del programa, conforme a los temas vistos en clase.
+En la carpetas se muestran las versiones del programa, conforme a los temas vistos en clase. 
 
 ## ActIntegral1
 Se implementa la primera versión con merge sort para determinar las ubicaciones mas cercanas, la búsqueda de rango y la interaccion con un archivo de texto. Todo esto almacenado en un vector de objetos.

@@ -3,7 +3,7 @@ Israel Iván Arroyo Parada
 A01706190
 ## Table of contents
 * [Información general](#información-general)
-* [Map.h](#map.h)
+* [Map.h](#map-h)
 * [AVL.h](#avl.h)
 * [Splay.h](#splay.h)
 * [Node.h](#node.h)

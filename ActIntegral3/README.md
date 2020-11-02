@@ -3,7 +3,12 @@ Israel Iván Arroyo Parada
 A01706190
 ## Table of contents
 * [Información general](#información-general)
-* [QueueMap.h](#queuemap.h)
+* [Map.h](#map.h)
+* [AVL.h](#avl.h)
+* [Splay.h](#splay.h)
+* [Node.h](#node.h)
+* [Location.h](#location.h)
+* [File.h](#file.h)
 * [Casos de prueba](#casos_de_prueba)
 
 ## Información general
@@ -18,8 +23,7 @@ Esta operación está garantizada a ser **O(logn)**, utiliza como apoyo el find 
 ### Investigación
 Este árbol parte de un BST y agrega restricciones nuevas para evitar casos degenrados, en donde se tenga, basicamente, una lista larga y se deban recorrer todos los elementos. Para lograr esto se tienen restricciones estrictas, en donde no se permiten cargas mayores del lado derecho o izquierdo, en cualquier nodo. Entonces, se hace un chequeo con cada inserción y eliminación de nodos. Después de esto se hacen rotaciones hasta llegar a un árbol balanceado.
 ### Ejemplos
-https://www.quora.com/What-are-some-real-world-applications-of-AVL-trees-today?share=1
-Los árboles auto balanceados son muy utilizados en el almacenaje de datos, pues se pueden hacer búsquedas e inserciones rápidas a pesar de tener muchos datos.
+Los árboles auto balanceados son muy utilizados en el almacenaje de datos, pues se pueden hacer búsquedas e inserciones rápidas a pesar de tener muchos datos (Stone, J.,2015).
 Los árboles AVL hacen operaciones muy costosas que pueden llegar a ser O(n), por esto no son tan utilizados. Algunos ejemplos de árboles AVL son:
 - Búsquedas rápidas: En una base de datos pequeña en el que sea necesario tener los datos mucho más cerca de la raíz.
 - Alta capacidad de cómputo: Un sistema como una Raspberry con mayor cantidad de cómputo que deba mantener datos de manera ordenada.
@@ -30,10 +34,9 @@ Ocurre los mismo que con la función find(), tiene un tienmpo de **O(logn)**. El
 ### check()
 Tiene una complejidad de **O(logn)**. Con la implementación de parent en los nodos, se logra recorrer solo la rama modificada. Se toma el nodo añadido o eliminado y se hace un recorrido hasta el nodo
 ### balance()
-https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
-Su complejidad es constante **O(1)**. Cada operación de rotación mueve una cantidad definida de apuntadores. Dependiendo del caso aumenta la cantidad de apuntadores que se mueven, pero esto es independiente del tamaño del árbol.
+Su complejidad es constante **O(1)**. Cada operación de rotación mueve una cantidad definida de apuntadores. Dependiendo del caso aumenta la cantidad de apuntadores que se mueven, pero esto es independiente del tamaño del árbol (Geeks for Geeks, 2020))
 ## Splay.h
-De acuerdo con https://www.geeksforgeeks.org/splay-tree-set-1-insert/, cualquier operacion de un Splay tree tiene un tiempo de **O(logn)**. Pero es importante aclarar que se puede llegar a un caso **O(n)**, si las inserciones llevan a un árbol degenerado. En este caso, se tomará un caso común con un árbol balanceado con complejidad promedio de O(logn).
+De acuerdo con (Geeks for Geeks, 2019), cualquier operacion de un Splay tree tiene un tiempo de **O(logn)**. Pero es importante aclarar que se puede llegar a un caso **O(n)**, si las inserciones llevan a un árbol degenerado. En este caso, se tomará un caso común con un árbol balanceado con complejidad promedio de O(logn).
 ### Splay()
 Tiene una complejidad **O(logn)**. Esto se debe al recorrido que se debe hacer para llevar un nodo a la raíz. En el peor de los casos se haría un Splay en una hoja y se tendría que hacer un recorrido por cada nivel, resultando en un tiempo de O(logn)
 ### find()
@@ -60,7 +63,7 @@ Lee un archivo txt y escribe un nuevo archivo la lista de ubicaciones ordenadas.
 El formato de salida es:
 > "Nombre" "(X,Y)" "Distancia del punto dado"
 
-# test.cpp(casos de prueba)
+# Casos de prueba
 Los casos de pureba se encuentran en el archivo test.cpp. Ahí se hacen pruebas para las funciones más imortatntes.
 ## Caso 1
 ### Input: 
@@ -94,12 +97,12 @@ Coordenadas iniciales (0, 0)
 "cafeteria 60 20" distancia 63
 ### Output
 #### Construcción de árbol
-//        85 miCasa
-        /    \
-      /        \
-  83 tuCasa  141 vineria
- /
-63 cafeteria
+                85 miCasa
+                  /    \
+                /        \
+                83 tuCasa  141 vineria
+                /
+                63 cafeteria
 Caso 3 AVL add
 1. in order: [cafeteria 60 20 , tuCasa 24 80 , miCasa 56 64 , vineria 100 100]
 2. pre order: [miCasa 56 64 , tuCasa 24 80 , cafeteria 60 20 , vineria 100 100]
@@ -124,13 +127,14 @@ Coordenadas iniciales (0,0)
 "vineria 100 100" distancia 141
 "cafeteria 60 20" distancia 63
 #### Output 
-//     63 cafeteria
-        \
-         141 vineria
-         /
-        85 miCasa
-         \
-          83 tuCasa
+                63 cafeteria
+                 \
+                141 vineria
+                /
+                85 miCasa
+                \
+                83 tuCasa
+                
 1. in order: [cafeteria 60 20 , tuCasa 24 80 , miCasa 56 64 , vineria 100 100]
 2. pre order: [cafeteria 60 20 , vineria 100 100 , tuCasa 24 80 , miCasa 56 64]
 
@@ -145,3 +149,9 @@ Caso 6 SplayTree find & remove
 1. pre order: [tuCasa 24 80 , cafeteria 60 20 , vineria 100 100 , miCasa 56 64]
 2. in order: [cafeteria 60 20 , miCasa 56 64 , vineria 100 100]
 2. pre order: [cafeteria 60 20 , vineria 100 100 , miCasa 56 64]
+## Referencias
+Geeks for Geeks. (2020). AVL Tree | Set 1 (Insertion). 1 de nov. 2020, de NA Sitio web: https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+
+Geeks for Geeks. (2019). Splay Tree | Set 1 (Search). 1 de nov. 2020, de NA Sitio web: https://www.geeksforgeeks.org/splay-tree-set-1-insert/
+
+Stone, J. (2015). What are some real-world applications of AVL trees today?. 1 de nov. 2020, de Quora Sitio web: https://www.quora.com/What-are-some-real-world-applications-of-AVL-trees-today?share=1 

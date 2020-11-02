@@ -1,0 +1,17 @@
+casa_de_carnicero 1 5
+tiendita_de_la_esquina 1 0
+casa_varde 1 10
+casa_azul 1 30
+casa_blanca 2 10
+casa_naranja 10 100
+dulceria 20 20
+panaderia 70 10
+puente 6 16
+restaurante 20 20
+vineria 100 100
+cafeteria 60 20
+fabrica 40 80
+gas 40 20
+centro_comercial 90 90
+cafe -80 -80
+farmacia -1 -30

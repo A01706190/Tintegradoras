@@ -119,6 +119,12 @@ int main(int argc, const char * argv[])
    cout<<"remove"<< endl;
    cout<< splayTree.inorder()<<endl;
    cout<< splayTree.preorder()<<endl;
+   
+  //    Caso 7 grafo
+    cout<<"Caso 7 Graph"<< endl;
+    Graph grafo;
+    grafo.loadGraphMat("grafo.txt",5,8);
+    cout<<grafo.printAdjMat();
 
    return 0;
 }

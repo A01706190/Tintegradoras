@@ -1,0 +1,9 @@
+pianta_village 7 10
+noki_bay 5 9
+sirena_beach 4 6
+bianco_hills 11 7
+pina_park 5 2
+ricco_harbor 10 5
+corona_mountain 14 8
+delfino_plaza 15 4
+gelato_beach 7 7

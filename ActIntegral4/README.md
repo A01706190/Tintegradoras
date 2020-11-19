@@ -19,6 +19,7 @@ El mapa utilizado como referencia es el siguiente:
 ![Isle Delfino](IsleDelfino.jpg)
 
 Sus conexiones son:
+
         0 Pianta_Village  Conexiones: 2 8
         1 Noki_Bay  Conexiones: 2
         2 Sirena_Beach  Conexiones: 4

@@ -5,12 +5,12 @@ Este programa presenta un tablero con varias ubicaciones, entre ellas, la del us
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
 
-|..................................................................................|.  
-|.................................casa1...........................................|.  
-|......casa2......................................................................|.  
-|..................................................................................|.  
-|.......tú....................................casa3..............................|.  
-|..................................................................................|.   
+    |.................................................................................|.  
+    |.................................casa1...........................................|.  
+    |......casa2......................................................................|.  
+    |.................................................................................|.  
+    |.......tú....................................casa3...............................|.  
+    |.................................................................................|.   
 
 En la carpetas se muestran las versiones del programa, conforme a los temas vistos en clase. 
 
@@ -21,3 +21,5 @@ Se implementa una lista de lugares por visitar, usando un queue de listas ligada
 ## ActIntegral 3
 Se corrigen comentarios en las funciones. Además, se implementa un árbol AVL para almacenarl objetos "localidades" y un árbol Splay. Este último sirve como un registro de los lugares que salen del queue. Esto simboliza una memoria que mantiene los registros mas recientes cerca de la raíz.
 El árbol AVL funcionará como ordenamiento, además de almacén, y como estructura implementada extra.
+## ActIntegral 4
+Se implementa un sistema de grafos para poder calcular rutas entre las localidades del mapa. También se cambia el sistema de almacenamiento de un árbol AVL a uno RED-Black. Se hizo una correción al cálculo de distancias entre la coordenada ingresada y las localidades del mapa para evitar colisiones.

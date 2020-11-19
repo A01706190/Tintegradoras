@@ -15,19 +15,19 @@ A01706190
 ## Información general
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.
 En esta entrega se cambia la manera de almacenar las ubicaciones en el mapa, ahora se ordena y almacena con un árbol Red-Black. También se integra una memoria de los lugares que se han visitado en forma de un Splay Tree.
-El mapa utilizado como referencia es el:
+El mapa utilizado como referencia es el siguiente:
 ![Isle Delfino](IsleDelfino.jpg)
 
 Sus conexiones son:
-    0 Pianta_Village  Conexiones: 2 8
-    1 Noki_Bay  Conexiones: 2
-    2 Sirena_Beach  Conexiones: 4
-    3 Bianco_Hills  Conexiones: 5
-    4 Pina_Park Conexiones:
-    5 Ricco_Harbor  Conexiones: 4
-    6 Corona_Mountain Conexiones:
-    7 Delfino_Plaza Conexiones: 0 1 2 3 4 5 6 8
-    8 Gelato_Beach  Conexiones:
+        0 Pianta_Village  Conexiones: 2 8
+        1 Noki_Bay  Conexiones: 2
+        2 Sirena_Beach  Conexiones: 4
+        3 Bianco_Hills  Conexiones: 5
+        4 Pina_Park Conexiones:
+        5 Ricco_Harbor  Conexiones: 4
+        6 Corona_Mountain Conexiones:
+        7 Delfino_Plaza Conexiones: 0 1 2 3 4 5 6 8
+        8 Gelato_Beach  Conexiones:
 
 ## graph
 Funciona como un mapa de rutas entre las localidades de Isle Delfino. Este recibe un archivo txt que establece las rutas que se pueden seguir entre las localidades.
@@ -38,7 +38,7 @@ Esta función corre en un tiempo de **O(n^2)**, pues se debe inicializar con 0 c
 Tiene un tiempo de **O(n)**. Esta búsqueda funciona como un stack, con recursividad, para se visitar cada nodo una sola vez. Esto quiere decir que se hace un recorrido de todos los elementos del Grafo, hasta llegar al nodo deseado. En el peor de los casos este nodo se encontraría al final del recorrido, haciendo necesario el recorrido del Grafo entero.
 ### BFS (Ruta 2)
 Esta búsqueda también tiene un tiempo de **O(n)**, es bastante parecido al DFS.La diferencia se encuentra en que está implementado con un queue y se hace un recorrido por niveles. A pesar de esto, permanece la restricción de visitar una sola vez cada nodo. Esto lo hace O(n).
-##RBT
+## RBT(Estructura extra)
 Esta estructura es utilizada como un almacén de localidades en la clase Map.
 ### Investigación
 Este árbol parte de un BST y agrega restricciones nuevas para evitar casos degenerados, en donde se tenga, básicamente, una lista larga y se deban recorrer todos los elementos. Para lograr esto se tienen restricciones no tan estrictas, en donde no se permiten cargas mayores del lado derecho o izquierdo, en cualquier nodo.

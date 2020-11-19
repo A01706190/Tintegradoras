@@ -18,6 +18,7 @@
 #include "Node.h"
 #include "Splay.h"
 #include "RBT.h"
+#include "graph.h"
 
 int main(int argc, const char * argv[])
 {

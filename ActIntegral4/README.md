@@ -1,4 +1,4 @@
-# Actividad Integral 3
+# Actividad Integral 4
 Israel Iván Arroyo Parada
 A01706190
 ## Table of contents
@@ -182,6 +182,27 @@ Caso 6 SplayTree find & remove
 1. pre order: [tuCasa 24 80 , cafeteria 60 20 , vineria 100 100 , miCasa 56 64]
 2. in order: [cafeteria 60 20 , miCasa 56 64 , vineria 100 100]
 2. pre order: [cafeteria 60 20 , vineria 100 100 , miCasa 56 64]
+
+## Caso 7
+### Input
+Archivo txt con relaciones
+
+        (0, 1)
+        (0, 2)
+        (0, 4)
+        (1, 4)
+        (1, 3)
+        (3, 4)
+        (3, 2)
+        (2, 4)
+        
+### Output
+
+        0 1 1 0 1
+        1 0 0 1 1 
+        1 0 0 1 1 
+        0 1 1 0 1 
+        1 1 1 1 0
 ## Referencias
 Geeks for Geeks. (2020). Red-Black Tree | Set 2 (Insert). 18 de nov. 2020, Sitio web: https://www.geeksforgeeks.org/red-black-tree-set-2-insert/
 

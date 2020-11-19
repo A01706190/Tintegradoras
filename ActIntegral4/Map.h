@@ -42,7 +42,7 @@ Map::Map(vector<string>& v, int arr[])
     {
 
         Location aux(v[i], arr);
-        cout<<aux.toString()<<" Distancia: "<<aux.getDistance()<<"\n";
+        //cout<<aux.toString()<<" Distancia: "<<aux.getDistance()<<"\n";
         locationsTree.add(aux);
     }
 

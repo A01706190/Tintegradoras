@@ -15,6 +15,10 @@
 #include <sstream>
 #include <string>
 #include <queue>
+#include <stack>
+#include <algorithm>
+
+
 const int SIZE = 9;
 const std::string ISLE[SIZE] = {"Pianta_Village","Noki_Bay","Sirena_Beach","Bianco_Hills",
 "Pina_Park","Ricco_Harbor","Corona_Mountain","Delfino_Plaza","Gelato_Beach"};

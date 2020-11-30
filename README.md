@@ -1,6 +1,8 @@
 # Tintegradoras
 Tareas integradoras de TC1031.2 2020
 
+## No fue necesario realizar ninguna correción
+
 Este programa presenta un tablero con varias ubicaciones, entre ellas, la del usuraio.
 Dichas ubicaciones son dadas como input en un archivo de texto.
 Como se muestra en el dibujo:
@@ -12,7 +14,7 @@ Como se muestra en el dibujo:
     |.......tú....................................casa3...............................|.  
     |.................................................................................|.   
 
-En la carpetas se muestran las versiones del programa, conforme a los temas vistos en clase. 
+En la carpetas se muestran las versiones del programa, conforme a los temas vistos en clase.
 
 ## ActIntegral1
 Se implementa la primera versión con merge sort para determinar las ubicaciones mas cercanas, la búsqueda de rango y la interaccion con un archivo de texto. Todo esto almacenado en un vector de objetos.
